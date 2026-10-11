@@ -24,7 +24,9 @@ public:
         }
         return dp[n][m];
     }
-
+    // this is the simplest approach
+    /* we are taking s and it's reverse t. now the longest common subsequence btween them will always be a palindrome
+    */
     int longestPalindromeSubseq(string s) {
         string t=s;
         reverse(t.begin(),t.end());
