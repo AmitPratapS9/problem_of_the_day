@@ -29,6 +29,9 @@ public:
         reverse(t.begin(),t.end());
         return longestCommonSubseuence(s,t);
     }
+    /*
+    so we basically no. of chnages required are =size of total length- no. of plaindronic subsequence
+    */
     int minInsertions(string s) {
         return s.size()-longestPalindromicSubsequence(s);
     }
